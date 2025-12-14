@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoLogoApple, IoLogoGooglePlaystore } from 'react-icons/io5';
+import App from '../assets/App.png'
 
 export default function YatraApp() {
   return (
@@ -12,7 +13,7 @@ export default function YatraApp() {
         <div className="relative h-full w-full max-w-[320px] md:max-w-[360px] flex items-end">
           <img
             className="h-full w-auto object-contain drop-shadow-2xl transition-transform duration-300"
-            src="https://www.yatra.com/react-home/_next/image?url=%2Freact-home%2Fimages%2FdownloadApp%2FmobileApp.webp&w=3840&q=75"
+            src={App}
             alt="Yatra Mobile App"
           />
         </div>

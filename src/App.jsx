@@ -9,6 +9,7 @@ import YatraApp from "./pages/YatraApp";
 import YatraServices from "./pages/YatraServices";
 import WhyYatra from "./pages/WhyYatra";
 import Footer from "./components/Footer";
+import indio from './assets/indio.png'
 
 const App = () => {
   return (
@@ -19,11 +20,11 @@ const App = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between gap-3 md:gap-4 w-full sm:w-[98%] md:w-[96%] lg:w-[95%] mx-auto mt-[45vh] sm:mt-8 md:mt-10 lg:-mt-5  px-3 sm:px-4 md:px-0">
+      <div className="flex  flex-col md:flex-row justify-between gap-3 md:gap-4 w-full sm:w-[98%] md:w-[96%] lg:w-[95%] mx-auto mt-[45vh] sm:mt-8 md:mt-10 lg:-mt-5  px-3 sm:px-4 md:px-0">
         <div className="border w-full md:w-[49%] flex justify-between items-center px-3 sm:px-4 md:px-3 py-4 sm:py-5 rounded-lg bg-white cursor-pointer transform hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_10px_rgba(0,0,0,0.3)]">
           <div className="text-sm sm:text-base md:text-[15px] lg:text-[17px] font-semibold flex items-center gap-2 flex-wrap">
             <span className="whitespace-nowrap">Check</span>
-            <img className="h-5 sm:h-6 mt-0 sm:mt-1" src="https://www.yatra.com/react-home/_next/image?url=%2Freact-home%2Fimages%2Findigo-logo.png&w=256&q=75" alt="" />
+            <img className="h-5 sm:h-6 mt-0 sm:mt-1" src={indio} alt="" />
             <span>Flights Cancellations</span>
           </div>
           <div className="shrink-0 ml-2">
@@ -47,7 +48,7 @@ const App = () => {
       <YatraServices />
       <WhyYatra />
       <Routes>
-        <Route path="cl" element={<Cl />} />
+        <Route path="/cl" element={<Cl />} />
       </Routes>
       <Footer />
       <div className="flex flex-col items-center fixed bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-5 md:right-5 z-50">

@@ -1,31 +1,93 @@
-import React from 'react'
-import { FaAngleDown } from 'react-icons/fa'
-import { IoCallOutline } from 'react-icons/io5'
-import { NavLink } from 'react-router-dom'
-import HeadPop from './HeadPop'
+import React from "react";
+import { FaAngleDown } from "react-icons/fa";
+import { IoCallOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import HeadPop from "./HeadPop";
 
 const Header = () => {
   return (
-    <div className='w-full'>
-      <div className='flex flex-col md:flex-row justify-between items-center p-4 gap-4'>
-        <div className='w-full md:w-auto flex justify-center md:justify-start'>
-          <img src="https://www.yatra.com/react-home/_next/static/media/logo.04fb10f6.svg" alt="" className='h-8 md:h-auto' />
+    <div className="w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center p-4 gap-4">
+        <div className="w-full md:w-auto flex justify-center md:justify-start">
+          {/* <img src="https://www.yatra.com/react-home/_next/static/media/logo.04fb10f6.svg" alt="" className='h-8 md:h-auto' /> */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="78"
+            height="34"
+            viewBox="0 0 78 34"
+            fill="none"
+          >
+            <path
+              d="M47.8536 23.5951C48.6466 23.457 49.4266 24.1348 49.5956 25.0886C49.7646 26.0549 49.2706 26.946 48.4776 27.084H48.4516C47.6196 27.2346 46.7876 27.3099 45.9426 27.3225C44.1876 27.3225 42.7706 26.9209 41.6656 26.0926C40.2486 25.0509 39.5076 23.3943 39.5076 21.3361V2.20981C39.5076 1.4317 40.3266 0.804199 41.3406 0.804199C42.3546 0.804199 43.1736 1.4317 43.1736 2.20981V21.3361C43.1736 22.2773 43.4206 22.9299 43.9016 23.2939C44.3306 23.6202 45.3966 24.0218 47.8146 23.6076L47.8536 23.5951Z"
+              fill="#D60F0F"
+            />
+            <path
+              d="M10.8036 25.6531C10.1406 25.6531 9.51659 24.7119 9.19159 24.0969C7.48859 20.8967 6.18859 18.349 5.14859 16.3033C3.02959 12.1242 1.88559 10.1287 0.923593 9.41335C-0.0254067 8.698 -0.220406 7.78184 0.234593 6.96609C0.715593 6.13778 1.80759 5.83658 2.66559 6.30093C2.67859 6.30093 2.67859 6.31349 2.69159 6.31349C4.73259 7.43044 5.79859 9.5263 8.45059 14.7471C9.47759 16.7677 10.7516 19.2902 12.4286 22.4278C12.8446 23.2059 13.1306 24.7746 12.4156 25.2892L10.8036 25.6531Z"
+              fill="#D60F0F"
+            />
+            <path
+              d="M53.717 18.0729C53.717 13.4294 49.817 9.66436 45.007 9.66436H37.298C36.492 9.66436 35.842 8.87371 35.842 7.8948C35.842 6.9159 36.492 6.12524 37.298 6.12524H45.007C51.845 6.12524 57.383 11.4716 57.383 18.0729V25.9418C57.383 26.7199 56.564 27.3474 55.55 27.3474C54.536 27.3474 53.717 26.7199 53.717 25.9418V18.0729Z"
+              fill="#D60F0F"
+            />
+            <path
+              d="M31.747 20.2946V20.4829C31.747 22.5034 30.057 23.8086 27.392 23.8086C24.727 23.8086 23.024 22.5034 23.024 20.4954C23.024 18.4748 24.74 17.1696 27.392 17.1696H27.548C30.317 17.1696 35.088 18.3995 35.413 18.4999V15.1365C33.645 14.5341 30.824 13.6305 27.548 13.6305H27.392C22.478 13.6305 19.358 16.7053 19.358 20.4954C19.358 24.2855 22.478 27.3477 27.392 27.3477C32.306 27.3477 35.426 24.2855 35.426 20.4954V20.3197L35.413 12.9779C35.413 9.1878 31.63 6.12559 27.392 6.12559L26.69 6.11304C21.1 6.11304 16.732 7.56884 13.534 14.6973C13.274 15.2746 13.027 15.8519 12.78 16.4292L12.754 16.5045C11.987 18.3242 11.545 19.6671 10.44 22.1269C8.37301 26.7328 6.52701 29.4185 3.70601 29.5691C2.18501 29.6569 1.80801 30.6358 1.99001 31.6147C2.17201 32.5937 2.82201 33.1961 3.70601 33.1961C8.29501 33.1961 11.168 29.1173 13.911 23.3066L13.95 23.2313C14.366 22.2901 14.769 21.3112 15.185 20.2821C15.731 18.9141 16.303 17.4959 16.927 16.1029C19.371 10.6562 22.14 9.65215 26.703 9.65215H27.405C29.368 9.65215 31.76 10.9574 31.76 12.9654V20.2569"
+              fill="#D60F0F"
+            />
+            <path
+              d="M74.334 20.2943V20.4825C74.334 22.5031 72.618 23.8083 69.966 23.8083C67.314 23.8083 65.598 22.5031 65.598 20.4951C65.598 18.4745 67.314 17.1693 69.966 17.1693H70.122C72.891 17.1693 77.662 18.3992 77.987 18.4996V15.1362C76.219 14.5338 73.385 13.6302 70.122 13.6302H69.966C65.052 13.6302 61.932 16.7049 61.932 20.4951C61.932 24.2852 65.052 27.3474 69.966 27.3474C74.88 27.3474 78 24.2852 78 20.4951V20.3194L77.987 12.9776C77.987 9.18746 74.204 6.13779 69.966 6.13779C69.966 6.13779 68.653 6.12524 68.38 6.12524C59.358 6.12524 53.729 11.8104 53.729 19.6668H57.395C57.395 13.7682 61.386 9.66436 68.38 9.66436C68.705 9.66436 69.719 9.67691 69.719 9.67691C72.345 9.67691 74.347 10.9696 74.347 12.9776L74.334 20.2943Z"
+              fill="#D60F0F"
+            />
+          </svg>
         </div>
-        <div className='w-full md:w-auto overflow-x-auto'>
-          <ul className='flex items-center gap-2 md:gap-3 justify-center md:justify-end flex-nowrap min-w-max md:min-w-0'>
-            <li className='hidden sm:block'><img src="https://www.yatra.com/react-home/_next/static/media/yatraPrimeBanner.887fd894.svg" alt="" className='h-6 md:h-auto' /></li>
-            <li><NavLink className='border text-[11px] md:text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize whitespace-nowrap'><img src="https://www.yatra.com/react-home/_next/static/media/yatra-business.a0945294.svg" alt="" className='h-4 md:h-auto' /> <span className='hidden sm:inline'>corporates</span><FaAngleDown className='hidden sm:inline' /></NavLink></li>
-            <li className='hidden lg:block'><NavLink className='border text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize'><img src="https://www.yatra.com/react-home/_next/static/media/yatra-agent.87280995.svg" alt="" /> for travel agents</NavLink></li>
-            <li><NavLink className='p-1 text-[11px] md:text-[13px] flex items-center gap-1 font-semibold capitalize'><IoCallOutline className='border rounded-full h-6 w-6 md:h-8 md:w-8 p-1 bg-white' /><span className='hidden sm:inline'>Support</span><FaAngleDown className='hidden sm:inline' /></NavLink></li>
-            <li><NavLink className='border rounded bg-[#D60F0F] text-white px-2 py-1 flex items-center gap-1 font-semibold capitalize text-[11px] md:text-[13px] whitespace-nowrap'>login / signup</NavLink></li>
+        <div className="w-full md:w-auto overflow-x-auto">
+          <ul className="flex items-center gap-2 md:gap-3 justify-center md:justify-end flex-nowrap min-w-max md:min-w-0">
+            <li className="hidden sm:block">
+              <img
+                src="https://www.yatra.com/react-home/_next/static/media/yatraPrimeBanner.887fd894.svg"
+                alt=""
+                className="h-6 md:h-auto"
+              />
+            </li>
+            <li>
+              <NavLink className="border text-[11px] md:text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize whitespace-nowrap">
+                <img
+                  src="https://www.yatra.com/react-home/_next/static/media/yatra-business.a0945294.svg"
+                  alt=""
+                  className="h-4 md:h-auto"
+                />{" "}
+                <span className="hidden sm:inline">corporates</span>
+                <FaAngleDown className="hidden sm:inline" />
+              </NavLink>
+            </li>
+            <li className="hidden lg:block">
+              <NavLink className="border text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize">
+                <img
+                  src="https://www.yatra.com/react-home/_next/static/media/yatra-agent.87280995.svg"
+                  alt=""
+                />{" "}
+                for travel agents
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="p-1 text-[11px] md:text-[13px] flex items-center gap-1 font-semibold capitalize">
+                <IoCallOutline className="border rounded-full h-6 w-6 md:h-8 md:w-8 p-1 bg-white" />
+                <span className="hidden sm:inline">Support</span>
+                <FaAngleDown className="hidden sm:inline" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="border rounded bg-[#D60F0F] text-white px-2 py-1 flex items-center gap-1 font-semibold capitalize text-[11px] md:text-[13px] whitespace-nowrap">
+                login / signup
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
-      <div className='mt-4 md:mt-12'>
+      <div className="mt-4 md:mt-12">
         <HeadPop />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
