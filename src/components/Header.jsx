@@ -50,7 +50,8 @@ const Header = () => {
             </li>
             <li>
               <NavLink className="border text-[11px] md:text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize whitespace-nowrap">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <div className="h-4 md:h-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
 <path d="M10.9573 11.875H25.0586C25.4674 11.875 25.8594 12.0374 26.1485 12.3264C26.4376 12.6155 26.6 13.0076 26.6 13.4164V26.4836C26.6 26.8924 26.4376 27.2845 26.1485 27.5735C25.8594 27.8626 25.4674 28.025 25.0586 28.025H5.34133C4.93253 28.025 4.54048 27.8626 4.25142 27.5735C3.96235 27.2845 3.79996 26.8924 3.79996 26.4836V11.866" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M8.54996 28.0251V12.0176" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M21.85 28.025V11.875" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,6 +67,7 @@ const Header = () => {
 <path d="M18.05 16.3079L16.15 17.3111V20.9002V22.3252H19.95V20.9002V17.3111L18.05 16.3079Z" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M19.95 20.9001H16.15" stroke="#262626" stroke-width="0.95" stroke-linejoin="round"/>
 </svg>
+                </div>
                 <span className="hidden sm:inline">corporates</span>
                 <FaAngleDown className="hidden sm:inline" />
               </NavLink>
