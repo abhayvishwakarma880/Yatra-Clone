@@ -50,11 +50,22 @@ const Header = () => {
             </li>
             <li>
               <NavLink className="border text-[11px] md:text-[13px] bg-white p-1 rounded-2xl flex items-center gap-1 font-semibold capitalize whitespace-nowrap">
-                <img
-                  src="https://www.yatra.com/react-home/_next/static/media/yatra-business.a0945294.svg"
-                  alt=""
-                  className="h-4 md:h-auto"
-                />{" "}
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+<path d="M10.9573 11.875H25.0586C25.4674 11.875 25.8594 12.0374 26.1485 12.3264C26.4376 12.6155 26.6 13.0076 26.6 13.4164V26.4836C26.6 26.8924 26.4376 27.2845 26.1485 27.5735C25.8594 27.8626 25.4674 28.025 25.0586 28.025H5.34133C4.93253 28.025 4.54048 27.8626 4.25142 27.5735C3.96235 27.2845 3.79996 26.8924 3.79996 26.4836V11.866" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.54996 28.0251V12.0176" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.85 28.025V11.875" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.89424 11.875H19.4428V9.83255C19.4428 9.66413 19.4096 9.49736 19.3451 9.34176C19.2807 9.18616 19.1862 9.04478 19.0671 8.92568C18.948 8.80659 18.8066 8.71212 18.651 8.64767C18.4954 8.58322 18.3287 8.55005 18.1603 8.55005H12.2384C11.9788 8.55019 11.7253 8.62914 11.5115 8.77646C11.2976 8.92379 11.1336 9.13254 11.041 9.37512" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.6 1.42505V2.37505" stroke="#D60F0F" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.6 4.27515V5.22515" stroke="#D60F0F" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7 3.32495H25.65" stroke="#D60F0F" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.55 3.32495H28.5" stroke="#D60F0F" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5375 5.2251C14.1933 5.2251 14.725 4.69344 14.725 4.0376C14.725 3.38176 14.1933 2.8501 13.5375 2.8501C12.8816 2.8501 12.35 3.38176 12.35 4.0376C12.35 4.69344 12.8816 5.2251 13.5375 5.2251Z" stroke="#1C9FE2" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.9484 10.2583C28.9488 10.4462 28.8933 10.6301 28.7892 10.7866C28.685 10.943 28.5367 11.0651 28.3632 11.1372C28.1896 11.2094 27.9986 11.2285 27.8142 11.192C27.6298 11.1556 27.4603 11.0652 27.3273 10.9324C27.1942 10.7996 27.1036 10.6304 27.0668 10.446C27.03 10.2617 27.0487 10.0706 27.1205 9.89692C27.1924 9.72323 27.3142 9.57475 27.4704 9.47029C27.6267 9.36582 27.8104 9.31006 27.9984 9.31006C28.25 9.31029 28.4912 9.41021 28.6693 9.58794C28.8473 9.76566 28.9477 10.0067 28.9484 10.2583Z" fill="#1C9FE2"/>
+<path d="M5.7061 2.62805C5.70575 2.81586 5.64974 2.99936 5.54514 3.15535C5.44054 3.31135 5.29205 3.43283 5.11842 3.50446C4.9448 3.57609 4.75385 3.59465 4.56968 3.5578C4.38552 3.52094 4.21641 3.43032 4.08373 3.29739C3.95105 3.16446 3.86074 2.99519 3.82423 2.81095C3.78772 2.62672 3.80664 2.4358 3.87859 2.26231C3.95055 2.08882 4.07231 1.94056 4.2285 1.83625C4.38469 1.73194 4.56829 1.67627 4.7561 1.67627C4.88101 1.67627 5.00469 1.7009 5.12007 1.74875C5.23544 1.79661 5.34025 1.86674 5.42849 1.95515C5.51672 2.04355 5.58666 2.14849 5.6343 2.26395C5.68194 2.37942 5.70634 2.50314 5.7061 2.62805Z" fill="#D60F0F"/>
+<path d="M18.05 11.875V16.15" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.05 16.3079L16.15 17.3111V20.9002V22.3252H19.95V20.9002V17.3111L18.05 16.3079Z" stroke="#262626" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.95 20.9001H16.15" stroke="#262626" stroke-width="0.95" stroke-linejoin="round"/>
+</svg>
                 <span className="hidden sm:inline">corporates</span>
                 <FaAngleDown className="hidden sm:inline" />
               </NavLink>
