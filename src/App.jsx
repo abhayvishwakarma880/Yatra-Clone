@@ -20,7 +20,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="flex  flex-col md:flex-row justify-between gap-3 md:gap-4 w-full sm:w-[98%] md:w-[96%] lg:w-[95%] mx-auto mt-[45vh] sm:mt-8 md:mt-10 lg:-mt-5  px-3 sm:px-4 md:px-0">
+      <div className="flex  flex-col md:flex-row justify-between gap-3 md:gap-4 w-full sm:w-[98%] md:w-[96%] lg:w-[95%] mx-auto mt-[50vh] sm:mt-8 md:mt-10 lg:-mt-5  px-3 sm:px-4 md:px-0">
         <div className="border w-full md:w-[49%] flex justify-between items-center px-3 sm:px-4 md:px-3 py-4 sm:py-5 rounded-lg bg-white cursor-pointer transform hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_10px_rgba(0,0,0,0.3)]">
           <div className="text-sm sm:text-base md:text-[15px] lg:text-[17px] font-semibold flex items-center gap-2 flex-wrap">
             <span className="whitespace-nowrap">Check</span>
